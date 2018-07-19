@@ -8,7 +8,9 @@ class Author
     @posts = []
   end
 
+  
   post = Post.new(title)
+  post.author = self
   @posts << post
   @@posts << post
 
