@@ -8,6 +8,10 @@ class Author
     @posts = []
   end
 
+  post = Post.new(title)
+  @posts << post
+  @@posts << post
+
   def self.post_count
     @@posts.length
   end
